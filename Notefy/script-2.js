@@ -1,0 +1,206 @@
+
+    gsap.from(".first-sub",{
+        opacity:0,
+        delay:0.4,
+        duration:1,
+        y:60
+    }
+    ) 
+    gsap.from(".back-icon",{
+        opacity:0,
+    delay:0.4,
+    duration:1,
+    x:60
+}
+) 
+gsap.from(".home",{
+    opacity:0,
+    delay:0.4,
+    duration:1,
+    x:-60
+}
+) 
+gsap.from(".second-sub",{
+    opacity:0,
+    delay:0.5,
+    duration:1,
+    y:60
+}
+) 
+gsap.from(".third-sub",{
+    opacity:0,
+    delay:0.8,
+    duration:1,
+    y:60
+}
+) 
+gsap.from(".fourth-sub",{
+    opacity:0,
+    delay:1,
+    duration:1,
+    y:60
+}
+) 
+gsap.from(".fifth-sub",{
+    opacity:0,
+    delay:1,
+    duration:1,
+    y:60
+}
+) 
+gsap.from(".logo",{
+    opacity:0,
+    delay:1,
+    duration:1,
+    x:-60
+}
+) 
+gsap.from(".links",{
+    opacity:0,
+    delay:1,
+    duration:1,
+    x:60
+}
+) 
+gsap.from(".hero-text",{
+    opacity:0,
+    delay:1,
+    duration:1,
+    x:-60
+}
+) 
+gsap.from(".hero-button",{
+    opacity:0,
+    delay:1,
+    duration:1,
+    y:60
+}
+) 
+gsap.from(".hero-image",{
+    opacity:0,
+    delay:1,
+    duration:1.4,
+    x:60
+}
+) 
+gsap.from(".first-to",{
+    opacity:0,
+    delay:1,
+    duration:1,
+    y:60
+}
+) 
+gsap.from(".crousels",{
+    opacity:0,
+    delay:0.1,
+    duration:1,
+    y:60,
+    scrollTrigger:{
+    trigger: ".crousels",
+    }
+}
+) 
+gsap.from(".about-text",{
+    opacity:0,
+    delay:0.1,
+    duration:1,
+    x:-60,
+    scrollTrigger:{
+    trigger: ".about-text",
+    }
+}
+) 
+gsap.from(".about-description",{
+    opacity:0,
+    delay:0.1,
+    duration:1,
+    x:-60,
+    scrollTrigger:{
+    trigger: ".about-description",
+    scroller: "body",
+    start: "top 60%",
+    }
+}
+) 
+gsap.from(".about-button",{
+    opacity:0,
+    delay:0.1,
+    duration:1,
+    y:-60,
+    scrollTrigger:{
+    trigger: ".about-button",
+    }
+}
+) 
+gsap.from(".about-video",{
+    opacity:0,
+    delay:0.1,
+    duration:1,
+    x:60,
+    scrollTrigger:{
+    trigger: ".about-video",
+    }
+}
+) 
+gsap.from(".why-heading",{
+    opacity:0,
+    delay:0.1,
+    duration:1,
+    y:-60,
+    scrollTrigger:{
+    trigger: ".why-heading",
+    }
+}
+) 
+gsap.from(".accordian",{
+    opacity:0,
+    delay:0.1,
+    duration:1.5,
+    y:60,
+    scrollTrigger:{
+    trigger: ".accordian",
+    }
+}
+) 
+gsap.from(".wrapper",{
+    opacity:0,
+    delay:0.1,
+    duration:1,
+    y:60,
+    scrollTrigger:{
+    trigger: ".wrapper",
+    }
+}
+)
+gsap.from(".feedback-form",{
+    opacity:0,
+    delay:0.1,
+    duration:1,
+    x:80,
+    scrollTrigger:{
+    trigger: ".feedback-form",
+    }
+}
+)
+gsap.from(".footer",{
+    opacity:0,
+    delay:0.1,
+    duration:1,
+    y:70,
+    scrollTrigger:{
+    trigger: ".footer",
+    }
+}
+)
+const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
